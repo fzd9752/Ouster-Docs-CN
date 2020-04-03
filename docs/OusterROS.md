@@ -37,20 +37,22 @@ Ouster提供基于ROS1的节点驱动，可以方便的查看点云数据并进�
 
 ## 用ROS查看实时点云
 
-1. 打开命令行，到编译好的ROS工作目录下（本例中该目录为 `~/ros_ws`）：
+1. 正确连接雷达
+
+2. 打开命令行，到编译好的ROS工作目录下（本例中该目录为 `~/ros_ws`）：
 
 	```
 	cd ~/ros_ws
 	```
-2. 加载ROS Ouster环境，命令行输入 `source devel/setup.bash`
+3. 加载ROS Ouster环境，命令行输入 `source devel/setup.bash`
 
 	![](./imgs/load_ros_env.png)
 	
-3. 命令行输入 `cd src/ouster_example/ouster_ros/` 转到*ouster_ros*目录下，该目录下包含运行ouster ros节点所需文件`os1.launch`
+4. 命令行输入 `cd src/ouster_example/ouster_ros/` 转到*ouster_ros*目录下，该目录下包含运行ouster ros节点所需文件`os1.launch`
 
 	![](./imgs/os1_launch.png)
 	
-4. 命令行输入以下命令，启动 ROS Ouster (示例中雷达IP为10.5.5.66, 本机IP为10.5.5.1):
+5. 命令行输入以下命令，启动 ROS Ouster (示例中雷达IP为10.5.5.66, 本机IP为10.5.5.1):
 
 	```bash
 	roslaunch os1.launch os1_hostname:=<雷达IP>  os1_udp_dest:=<本机IP>  viz:=true image:=true
@@ -71,7 +73,7 @@ Ouster提供基于ROS1的节点驱动，可以方便的查看点云数据并进�
 	
 	![](./imgs/ros_viz_success.png)
 	
-5. 用`RVIZ`查看雷达输出，用快捷键`shift+ctl+t`新开启一个命令行页面，输入`rviz -d viz.rviz`，启动rviz查看点云或2D环视图：
+6. 用`RVIZ`查看雷达输出，用快捷键`shift+ctl+t`新开启一个命令行页面，输入`rviz -d viz.rviz`，启动rviz查看点云或2D环视图：
 
 	![](./imgs/rviz_success.png)
 	
@@ -88,7 +90,7 @@ Ouster提供基于ROS1的节点驱动，可以方便的查看点云数据并进�
 	
 	选中命令行，快捷键`ctl+c`停止录制。
 	
-## 播放录制的点云文件（不需要连接雷达）
+## 播放录制的点云文件（不需要雷达）
 
 1. 关闭所有运行中的命令行，结束正在运行的所有ROS节点
 2. 打开命令行，定位到编译好的 ROS Ouster 工作目录下（本例中该目录为 `~/ros_ws`）：
