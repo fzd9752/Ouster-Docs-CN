@@ -1,4 +1,4 @@
-![我是Ouster的logo，你的网络没问题，就是没有图片](./imgs_market/ouster.svg)
+![logo](./imgs_market/ouster.svg ':size=50x50')
 
 # Ouster 中文文档 <small>1.14 beta6</small>
 
@@ -12,4 +12,4 @@
 
 <!-- background image -->
 
-![](./imgs_market/OS0_1_2_infrared_warm.jpg)
+![backgound](./imgs_market/OS0_1_2_infrared_warm.jpg)
