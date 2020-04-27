@@ -11,4 +11,4 @@
 [开始使用](start.md)
 
 <!-- background image -->
-![backgound](./imgs_market/OS0_1_2_infrared_warm.jpg)
+![backgound](./imgs_market/Picture1.png)
