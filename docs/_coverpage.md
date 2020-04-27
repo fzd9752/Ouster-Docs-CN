@@ -1,4 +1,4 @@
-![logo](./imgs_market/ouster.svg ':size=50x50')
+![logo](./imgs_market/ouster.svg ':size=100x100')
 
 # Ouster 中文文档 <small>1.14 beta6</small>
 
@@ -11,5 +11,4 @@
 [开始使用](start.md)
 
 <!-- background image -->
-
 ![backgound](./imgs_market/OS0_1_2_infrared_warm.jpg)
