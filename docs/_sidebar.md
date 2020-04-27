@@ -4,9 +4,10 @@
 - [**Ouster Visulaizer**](OusterViz.md)
 - [**Ouster ROS**](OusterROS.md)
 - [**Ouster Studio（待更新）**](OusterStudio.md)
+- [**TCP命令配置雷达**](tcpCommand.md)
 - **时间同步（待更新）**
     - [GPS 同步（待更新）](syncGPS.md)
     - [PPS 同步（待更新）](syncPPS.md)
 - **我的雷达罢工了！（待更新）**
-    - [常见故障排除（待更新）](youcandoit.md)
+    - [常见故障排除（待更新）](Troubleshooting.md)
     - [如何向Ouster寻求帮助（待更新）](helpOuster.md)
