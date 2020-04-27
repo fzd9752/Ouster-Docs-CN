@@ -22,7 +22,7 @@ Ouster提供基于ROS1的节点驱动，可以方便的查看点云数据并进�
     4. 在命令行中输入下面的命令，创建ROS Node目录并编译：
 	
 	```bash
-	mkdir -p ros_ws/src && cd ros_ws && ln -s ~/ouster_example ./src/ && catkin_make -DCMAKE_BUILD_TYPE=Release`
+	mkdir -p ros_ws/src && cd ros_ws && ln -s ~/ouster_example ./src/ && catkin_make -DCMAKE_BUILD_TYPE=Release
 	```
 	
 	![ouster_ros_build.png](./imgs/ouster_ros_build.png)

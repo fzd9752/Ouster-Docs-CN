@@ -1,4 +1,4 @@
-![我是Ouster的logo，你的网络没问题，就是没有图片](_media/ouster.svg)
+![我是Ouster的logo，你的网络没问题，就是没有图片](./imgs_market/ouster.svg)
 
 # Ouster 中文文档 <small>1.14 beta6</small>
 
@@ -9,3 +9,7 @@
 
 [GitHub](https://github.com/ouster-lidar/ouster_example)
 [开始使用](start.md)
+
+<!-- background image -->
+
+![](./imgs_market/OS0_1_2_infrared_warm.jpg)
