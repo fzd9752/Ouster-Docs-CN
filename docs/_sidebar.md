@@ -1,6 +1,7 @@
 - [**快速开始（待更新）**](start.md)
     - [DHCP配置IP](DHCP.md)
     - [设置静态IP](staticIP.md)
+    - [网络连接](Network.md)
 - [**Ouster Visulaizer**](OusterViz.md)
 - [**Ouster ROS**](OusterROS.md)
 - [**Ouster Studio（待更新）**](OusterStudio.md)
