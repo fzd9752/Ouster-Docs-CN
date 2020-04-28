@@ -6,14 +6,14 @@
 
 ---
 
-[Ouster 最新固件 v1.14-beta8](https://eyun.baidu.com/s/3jKiMesI)
+- [Ouster 最新固件 v1.14-beta8](https://eyun.baidu.com/s/3jKiMesI)
 
 ---
 
 - [最新示例驱动](https://eyun.baidu.com/s/3pMvmQtP)
-    - TODO：
-    - [ ] [更新最新笛卡尔坐标系公式](https://eyun.baidu.com/s/3oAsNtX4)
-    - [ ] 修复ROS中2D图像显示
+    - 待修复BUG：
+        - [ ] [更新最新笛卡尔坐标系转换公式](https://eyun.baidu.com/s/3oAsNtX4)
+        - [ ] 修复ROS中2D图像显示
 
 ---
 [回首页](#main)
