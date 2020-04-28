@@ -15,4 +15,4 @@ write_config_txt
 请参考《用户手册》中相关章节。
 
 ---
-[回首页](#main)
+[回首页](README)

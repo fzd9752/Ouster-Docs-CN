@@ -65,4 +65,4 @@ cd ~/ouster_example/ouster_viz && mkdir build && cd build && cmake -DCMAKE_BUILD
 | `d` | 调整2D图像和点云图像的显示比例 |
 
 ---
-[回首页](#main)
+[回首页](README)

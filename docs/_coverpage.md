@@ -8,7 +8,7 @@
 - 体积小巧，性价比高
 
 [GitHub](https://github.com/ouster-lidar/ouster_example)
-[开始使用](start.md)
+[开始使用](README.md)
 
 <!-- background image -->
 ![backgound](./imgs_market/Picture1.png)

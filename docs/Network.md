@@ -93,4 +93,4 @@ write_config_txt
 如果不知道目标IP地址，则可以使用命令`set_udp_dest_auto`，该命令让总动配置雷达将数据发送到发出该命令的地址。
 
 ---
-[回首页](#main)
+[回首页](README)
