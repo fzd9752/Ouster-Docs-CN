@@ -8,6 +8,15 @@ Ouster 激光雷达使用以太网进行通讯，利用 UDP 进行激光点云�
 
 ### Ubuntu - avahi-browse
 
+Ouster 雷达在DNS中的类型为 `_roger._tcp` 在命令行中输入 `avahi-browse -lr _roger._tcp` 可以搜索到雷达在网络中的信息：
+
+![avahi-browse command](imgs/avahi-browse)
+
+其中 *hostname* 为该雷达的域名可以通过过任一浏览器输入地址 http://hostname (例：http://os1-991946000317.local) 访问雷达网页接口。
+
+*address* 为该雷达 IPv4 地址，浏览器可以直接输入该地址访问网页接口。
+
+
 
 ### MAC - dns-sd
 

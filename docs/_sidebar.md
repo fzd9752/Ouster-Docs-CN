@@ -8,7 +8,7 @@
 - [**TCP命令配置雷达**](tcpCommand.md)
 - **时间同步（待更新）**
     - [GPS 同步（待更新）](syncGPS.md)
-    - [PPS 同步（待更新）](syncPPS.md)
+    - [PTP 同步（待更新）](syncPTP.md)
 - **我的雷达罢工了！（待更新）**
     - [常见故障排除（待更新）](Troubleshooting.md)
     - [如何向Ouster寻求帮助（待更新）](helpOuster.md)
