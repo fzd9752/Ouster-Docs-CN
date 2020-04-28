@@ -1,4 +1,4 @@
-- [**快速开始（待更新）**](start.md)
+- [**快速开始**](start.md)
     - [DHCP配置IP](DHCP.md)
     - [设置静态IP](staticIP.md)
 - [**Ouster Visulaizer**](OusterViz.md)
@@ -9,5 +9,5 @@
     - [GPS 时间同步](syncGPS.md)
     - [PTP 时间同步](syncPTP.md)
 - **我的雷达罢工了！**
-    - [常见故障排除（待更新）](Troubleshooting.md)
-    - [如何向Ouster寻求帮助（待更新）](helpOuster.md)
+    - [常见故障排除](Troubleshooting.md)
+    - [如何向Ouster寻求帮助](helpOuster.md)

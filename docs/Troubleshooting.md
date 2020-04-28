@@ -28,7 +28,7 @@ Ouster 错误分为：
 
 错误代码和详细解析请从[**这里**](TODO)下载。
 
-如果错误代码给出的解决方案不能帮助您解决问题，请在诊断页面点击 ***Diagnostic Info*** 和 ***System Journal*** 下载诊断和日志文件发送给技术支持人员或上传到 [**Ouster 支持中心**](#helpOuster)。
+如果错误代码给出的解决方案不能帮助您解决问题，请在诊断页面点击 ***Diagnostic Info*** 和 ***System Journal*** 下载诊断和日志文件发送给技术支持人员或上传到 [**Ouster 支持中心**](helpOuster)。
 
 
 ## 利用TCP命令查看雷达警报
