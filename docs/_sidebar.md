@@ -1,13 +1,12 @@
-- [**快速开始**](start.md)
+- **快速开始**
     - [DHCP配置IP](DHCP.md)
-    - [设置静态IP](staticIP.md)
-- [**Ouster Visulaizer**](OusterViz.md)
-- [**Ouster ROS**](OusterROS.md)
+    - [Ouster Visulaizer](OusterViz.md)
+    - [Ouster ROS](OusterROS.md)
 - **进阶功能**
+    - [设置静态IP](staticIP.md)
+    - [数据结构](datastructure.md)
     - [网络连接](Network.md)
     - [TCP命令配置雷达](tcpCommand.md)
     - [GPS 时间同步](syncGPS.md)
     - [PTP 时间同步](syncPTP.md)
-- **我的雷达罢工了！**
-    - [常见故障排除](Troubleshooting.md)
-    - [如何向Ouster寻求帮助](helpOuster.md)
+- [**常见故障排除**](Troubleshooting.md)

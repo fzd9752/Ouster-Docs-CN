@@ -1,6 +1,6 @@
 ![logo](./imgs_market/ouster.svg ':size=100x100')
 
-# Ouster 中文文档 <small>1.14 beta</small>
+# Ouster 中文文档 <small>v2.0</small>
 
 > 突破性的数字3D激光雷达
 
