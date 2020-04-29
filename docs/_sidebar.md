@@ -5,6 +5,7 @@
 - **进阶功能**
     - [设置静态IP](staticIP.md)
     - [数据结构](datastructure.md)
+    - [激光雷达坐标系（待更新）](coordinate.md)
     - [网络连接](Network.md)
     - [TCP命令配置雷达](tcpCommand.md)
     - [GPS 时间同步](syncGPS.md)
