@@ -26,13 +26,16 @@ Ouster 错误分为：
 - 警告(Warning)：发生错误，影响雷达性能
 - 注意(Notice)：发生错误，可能影响雷达性能
 
-错误代码和详细解析请从[**这里**](TODO)下载。
+错误代码和详细解析请联系Ouster技术支持获取下载。
 
 如果错误代码给出的解决方案不能帮助您解决问题，请在诊断页面点击 ***Diagnostic Info*** 和 ***System Journal*** 下载诊断和日志文件发送给技术支持人员或上传到 [**Ouster 支持中心**](https://ouster.atlassian.net/servicedesk/customer/portal/8/group/22/create/86)。
 
 
 ## 利用TCP命令查看雷达警报
-TODO
+
+也可以尝试[TCP命令](tcpCommand)的连入雷达，输入`get_alerts`查看雷达报警信息:
+
+![tcp_alert](imgs/get_alert.png)
 
 ---
 [回首页](README)

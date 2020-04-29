@@ -41,7 +41,7 @@ Ouster提供基于ROS1的节点驱动，可以方便的查看点云数据并进�
 
 2. 打开命令行，到编译好的ROS工作目录下（本例中该目录为 `~/ros_ws`）：
 
-	```
+	```bash
 	cd ~/ros_ws
 	```
 3. 加载ROS Ouster环境，命令行输入 `source devel/setup.bash`
@@ -95,7 +95,7 @@ Ouster提供基于ROS1的节点驱动，可以方便的查看点云数据并进�
 1. 关闭所有运行中的命令行，结束正在运行的所有ROS节点
 2. 打开命令行，定位到编译好的 ROS Ouster 工作目录下（本例中该目录为 `~/ros_ws`）：
 
-	```
+	```bash
 	cd ros_ws
 	```
 3. 加载环境，命令行输入 `source devel/setup.bash`
@@ -131,11 +131,63 @@ Ouster提供基于ROS1的节点驱动，可以方便的查看点云数据并进�
 
 	![](./imgs/start_rviz.png)
 
-## ROS Ouster 节点（topic）解释（待更新）
-TODO
+## ROS Ouster 节点（topic）
+
+Ouster ROS启动后包含以下几个节点:
+![ros topic](imgs/rostopic.png)
+
+- `/os1_node/` 为Ouster机关雷达数据的读取节点，分别包含激光雷达和IMU的输出数据。
+- `/os1_cloud_node/`为激光雷达和IMU原始数据的解析数据。
+- `/img_node/` 下为 `intensity_image`, `noise_image`, 和 `range_img` 三个节点，分别是利用3D点云数据和不同点云属性生成的2D环视图。
+
+各节点关系如下图：
+
+![rostopic graph](imgs/rosnode_graph.png)
 
 ## 通过 ROS Ouster 获得 `PointCloud2` 数据（待更新）
-TODO
+
+![pc2](imgs/pointcloud2type.png)
+
+节点`/os1_cloud_node/points`的输出`PointCloud2`格式数据，可以通过订阅该节点或录制该节点获得相应的点云数据，调试机器学习或深度学习的代码。下面为python解析rosbag的示例：
+
+```python
+import rosbag
+import numpy as np
+import sensor_msgs.point_cloud2 as pc2
+
+pointclouds = []
+bag = rosbag.Bag('/home/ElsaW/Workspace/pointcloud2.bag')
+
+print(bag)
+
+# path:        /home/ElsaW/Workspace/pointcloud2.bag
+# version:     2.0
+# duration:    1:10s (70s)
+# start:       Apr 07 2020 11:23:44.55 (1586229824.55)
+# end:         Apr 07 2020 11:24:54.56 (1586229894.56)
+# size:        4.1 GB
+# messages:    702
+# compression: none [702/702 chunks]
+# types:       sensor_msgs/PointCloud2 [1158d486dd51d683ce2f1be655c3c181]
+# topics:      /os1_cloud_node/points   702 msgs @ 10.0 Hz : sensor_msgs/PointCloud2
+
+pointclouds = []
+for topic, msg, t in bag.read_messages(topics = ['/os1_cloud_node/points']):
+    lidar = pc2.read_points(msg)
+    points = np.array(list(lidar))
+    pointclouds.append(points)
+    print("Store...Need a little bit of time.")
+
+print(pointclouds[0].shape) # (131072, 9) this bag use 64 channels sensor data
+
+print(pointclouds[0][0]) # x,y,z,intensity,time,reflectivity,ring,noise ,range
+
+# Output example:
+# array([ -7.01347685e+00,   4.48993355e-01,   6.91443586e+00,
+#          1.20000000e+01,   0.00000000e+00,   1.23300000e+03,
+#          0.00000000e+00,   1.34000000e+02,   9.85900000e+03])
+
+```
 
 ---
 [回首页](README)

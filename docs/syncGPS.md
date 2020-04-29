@@ -26,53 +26,53 @@
 
 以Linux系统为例，打开命令行窗口，输入 `nc hostname nc` 进入TCP命令控制界面，输入：
 
-```
+```bash
 set_config_param timestamp_mode TIME_FROM_SYNC_PULSE_IN
 ```
 使用外部输入信号作为同步源。
 
-```
+```bash
 set_config_param multipurpose_io_mode INPUT_NMEA_UART
 ```
 使用 NMEA UART 消息同步时间。
 
-```
+```bash
 set_config_param sync_pulse_in_polarity <ACTIVE_HIGH or ACTIVE_LOW>
 ```
 根据GPS的启用极性选择高电平或低电平。
 
-```
+```bash
 set_config_param nmea_in_polarity <ACTIVE_HIGH or ACTIVE_LOW>
 ```
 根据NMEA的类型选择高电平启用或低电平启用。
 
-```
+```bash
 set_config_param nmea_baud_rate <BAUD_11520 or BAUD_9600>
 ```
 根据GPS的配置选择对应的波特率。
 
-```
+```bash
 set_config_param nmea_leap_seconds 37
 ```
 设置闰秒，参考国际原子时([TAI](http://www.leapsecond.com/java/gpsclock.htm))。
 
-```
+```bash
 reinitialize
 ```
 重新初始化雷达，使上述设置生效
 
-```
+```bash
 write_config_txt
 ```
 保存配置，否则下次上电后配置失效。
 
-![TODO 此处应有图]()
+![gps_sync](imgs/set_gps_sync.png)
 
 ## 检查时间同步是否成功
 
 TCP 命令输入 `get_time_info`，雷达将返回JSON格式的内容如下：
 
-```
+```json
 {
   "timestamp": {
     "time": 1585881641.96139565999999,
